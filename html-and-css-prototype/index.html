@@ -12,8 +12,144 @@
     </div>
 
     <!-- Your code goes here -->
+    <!-- I had some success first attempting to recreate the prototype by writing grids within grids, but I ran into issues that made me believe the method you see below would have a better result. I'm not happy with the end product and wish I could have overcome a few more obstacles so I could feel within arms reach of a completed replication. -->
+      <div>
+        <meta charset="utf-8">
+        <title>HTML/CSS Test</title>
+        <link rel="stylesheet" href="CSS/stylesheet.css">
+      </div>
+        <div class="container">
+          <h1>Recreated using HTML &amp; CSS</h1>
+    <style>
+      .item1 {background:#424242;
+        font-family: "rooney-web", "AmericanTypewriter", Rockwell, serif;
+        font-size: .57em;
+        font-weight: lighter;
+        color: #eaeaea;
+        border-radius: 2px;
+        margin: 5px;
+        max-width: 250px;
+        padding: 10px;
+                }
+      .item2 {background: #EF5F3C;
+        min-height: 10px;
+        border-style: solid;
+        border-color: #eaeaea;
+        border-width: .5px;
+        max-width: 190px;
 
+      }
+      .item3 {background: white;
+        font-family: "rooney-web", "AmericanTypewriter", Rockwell, serif;
+        font-size: .48em;
+        font-weight: bold;
+        text-align: left;
+        border-style: solid;
+        border-bottom-color: white;
+        border-width: thin;
+        color: #777;
+        max-width: 250px;
+        padding: 13px;
+      }
+      .item4 {background: white;
+        font-family: "rooney-web", "AmericanTypewriter", Rockwell, serif;
+        font-size: .48em;
+        text-align: left;
+        border-style: solid;
+        border-width: thin;
+        color: #777;
+        border-top-color: white;
+        max-width: 250px;
+        padding-left: 13px;
+        padding-bottom: 10px;
+           }
+      .item5 {background: white;
+        min-height: 20px;
+        max-width: 250px;
+        border-style: solid;
+        color: #777;
+        border-color: #eaeaea;
+        border-width: .5px;
+        font-family: "rooney-web", "AmericanTypewriter", Rockwell, serif;
+      }
+      .item6 {background: #1CBC2C;
+        display: grid;
+        font-size: .8em;
+        font-weight: lighter;
+        min-height: 20px;
+        max-width: 250px;
+        border-style: solid;
+        border-color: #eaeaea;
+        border-width: .5px;
+        color: white;
+        font-family: "rooney-web", "AmericanTypewriter", Rockwell, serif;
+       }
+       .item7 {background: white;
+         font-family: "rooney-web", "AmericanTypewriter", Rockwell, serif;
+         font-size: .52em;
+         text-align: left;
+         color: #20A1D4;
+         font-style: italic;
+         max-width: 250px;
+         padding-bottom: 10px;
 
+       }
+       .item8 {background: white;
+         font-family: "rooney-web", "AmericanTypewriter", Rockwell, serif;
+         font-size: .6em;
+         text-align: left;
+         color: #777;
+         max-width: 250px;
+         border-style: solid;
+         border-color: #eaeaea;
+         border-width: .5px;
+         padding: 5px;
+       }
+       .item9 {background: white;
+         font-family: "rooney-web", "AmericanTypewriter", Rockwell, serif;
+         font-size: .6em;
+         text-align: left;
+         color: #777;
+         max-width: 250px;
+         border-style: solid;
+         border-color: #eaeaea;
+         border-width: .5px;
+         padding: 5px;
+
+       }
+       .only {
+         color: "EF5F3C";
+       }
+      .container {
+      	margin: 2em auto;
+      	max-width: 630px;
+      	text-align: center;
+        grid-gap:10px;
+        grid-template-rows: reapeat(7, 1fr);
+        grid-template-columns: 100px 100px;
+        grid-template-areas:
+
+          "item1 item1"
+          "item2 ."
+          "item3 item3"
+          "item4 item4"
+          "item5 item6"
+          "item7 item7"
+          "item8 item9";
+      }
+    </style>
+          <h2 class="container">
+            <p class="item1"><b>$167</b> still needed for this project</p>
+            <div class="item2"></div>
+            <p class="item3"><span class="only">Only 3 days left</span> to fund this project.</p>
+            <p class="item4">Join the <b>42</b> other donors who have already supported this project. Every dollar helps.</p>
+            <div class="item5">$ 50</div>
+            <div class="item6">Give Now</div>
+            <div class="item7">Why give $50?</div>
+            <div class="item8">Save for later</div>
+            <div class="item9">Tell your friends</div>
+          </h2>
+        </div>
 
   </body>
 </html>
